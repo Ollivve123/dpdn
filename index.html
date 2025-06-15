@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité</title>
+    <title>Politique de Confidentialité / Privacy Policy</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
@@ -19,6 +19,40 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .language-selector {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .language-selector button {
+            margin: 0 10px;
+            padding: 10px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .language-selector button.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-selector button:not(.active) {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+        .language-selector button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .language-section {
+            display: none;
+        }
+        .language-section.active {
+            display: block;
         }
         h1 {
             color: #2c3e50;
@@ -59,90 +93,207 @@
             .container {
                 padding: 20px;
             }
+            .language-selector button {
+                margin: 5px;
+                padding: 8px 20px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Politique de Confidentialité</h1>
-        <p class="update-date"><strong>Dernière mise à jour :</strong> 11/06/2025</p>
-
-        <h2>1. Introduction</h2>
-        <p>Cette politique de confidentialité s'applique à l'application <strong>Des Phares Dans Les Nuages</strong> pour appareils mobiles, développée par <strong>Ollivve</strong>.</p>
-        
-        <div class="highlight">
-            <p><strong>Important :</strong> Notre jeu ne collecte AUCUNE donnée personnelle. Nous ne collectons pas et n'avons pas accès à vos informations personnelles telles que votre localisation GPS, carnet d'adresses, mots de passe, photos, ou toute autre donnée sensible.</p>
+        <div class="language-selector">
+            <button id="fr-btn" class="active" onclick="showLanguage('fr')">🇫🇷 Français</button>
+            <button id="en-btn" onclick="showLanguage('en')">🇬🇧 English</button>
         </div>
 
-        <h2>2. Données collectées</h2>
-        
-        <h3>2.1 Notre jeu ne collecte AUCUNE donnée</h3>
-        <p>Nous avons conçu notre jeu pour qu'il fonctionne sans collecter aucune information personnelle. Le jeu :</p>
-        <ul>
-            <li>Ne collecte PAS votre localisation GPS</li>
-            <li>N'accède PAS à votre carnet d'adresses</li>
-            <li>Ne demande PAS de mots de passe</li>
-            <li>N'accède PAS à vos photos ou fichiers</li>
-            <li>Ne collecte PAS d'informations personnelles identifiables</li>
-            <li>Ne nécessite PAS de création de compte</li>
-        </ul>
+        <!-- SECTION FRANÇAISE -->
+        <div id="fr-content" class="language-section active">
+            <h1>Politique de Confidentialité</h1>
+            <p class="update-date"><strong>Dernière mise à jour :</strong> 15/06/2025</p>
 
-        <h3>2.2 Données collectées automatiquement par Google Play</h3>
-        <p>Lorsque vous téléchargez et installez notre jeu via Google Play Store, Google peut collecter automatiquement certaines données techniques pour le bon fonctionnement du Play Store, telles que :</p>
-        <ul>
-            <li>Informations sur l'appareil (type d'appareil, version Android)</li>
-            <li>Statistiques d'installation et de désinstallation</li>
-            <li>Rapports de plantage et diagnostics de performance (si activés dans vos paramètres Google Play)</li>
-        </ul>
-        <p><strong>Note importante :</strong> Ces données sont collectées directement par Google, et non par notre application. Nous n'avons pas accès à vos informations personnelles via ces collectes.</p>
+            <h2>1. Introduction</h2>
+            <p>Cette politique de confidentialité s'applique à l'application <strong>DesPharesDansLesNuages</strong>  pour appareils mobiles, développée par <strong>Ollivve</strong>.</p>
+            
+            <div class="highlight">
+                <p><strong>Important :</strong> Notre jeu ne collecte AUCUNE donnée personnelle. Nous ne collectons pas et n'avons pas accès à vos informations personnelles telles que votre localisation GPS, carnet d'adresses, mots de passe, photos, ou toute autre donnée sensible.</p>
+            </div>
 
-        <h2>3. Comment nous utilisons les données</h2>
-        <p>Comme notre jeu ne collecte aucune donnée, nous n'utilisons aucune information personnelle vous concernant. Le jeu fonctionne entièrement en mode hors ligne sur votre appareil.</p>
+            <h2>2. Données collectées</h2>
+            
+            <h3>2.1 Notre jeu ne collecte AUCUNE donnée</h3>
+            <p>Nous avons conçu notre jeu pour qu'il fonctionne sans collecter aucune information personnelle. Le jeu :</p>
+            <ul>
+                <li>Ne collecte PAS votre localisation GPS</li>
+                <li>N'accède PAS à votre carnet d'adresses</li>
+                <li>Ne demande PAS de mots de passe</li>
+                <li>N'accède PAS à vos photos ou fichiers</li>
+                <li>Ne collecte PAS d'informations personnelles identifiables</li>
+                <li>Ne nécessite PAS de création de compte</li>
+            </ul>
 
-        <h2>4. Partage des informations</h2>
-        <p>Nous ne partageons aucune donnée personnelle car nous n'en collectons aucune.</p>
+            <h3>2.2 Données collectées automatiquement par Google Play</h3>
+            <p>Lorsque vous téléchargez et installez notre jeu via Google Play Store, Google peut collecter automatiquement certaines données techniques pour le bon fonctionnement du Play Store, telles que :</p>
+            <ul>
+                <li>Informations sur l'appareil (type d'appareil, version Android)</li>
+                <li>Statistiques d'installation et de désinstallation</li>
+                <li>Rapports de plantage et diagnostics de performance (si activés dans vos paramètres Google Play)</li>
+            </ul>
+            <p><strong>Note importante :</strong> Ces données sont collectées directement par Google, et non par notre application. Nous n'avons pas accès à vos informations personnelles via ces collectes.</p>
 
-        <h2>5. Stockage des données</h2>
-        <p>Toutes les données du jeu (progression, scores, paramètres) sont stockées localement sur votre appareil. Nous n'avons accès à aucune de ces informations.</p>
+            <h2>3. Comment nous utilisons les données</h2>
+            <p>Comme notre jeu ne collecte aucune donnée, nous n'utilisons aucune information personnelle vous concernant. Le jeu fonctionne entièrement en mode hors ligne sur votre appareil.</p>
 
-        <h2>6. Sécurité</h2>
-        <p>La sécurité de vos données est garantie par le fait que nous ne collectons aucune information. Toutes les données du jeu restent sur votre appareil.</p>
+            <h2>4. Partage des informations</h2>
+            <p>Nous ne partageons aucune donnée personnelle car nous n'en collectons aucune.</p>
 
-        <h2>7. Enfants</h2>
-        <p>Notre jeu convient à tous les âges car il ne collecte aucune donnée personnelle. Les parents peuvent être rassurés que leurs enfants peuvent jouer en toute sécurité.</p>
+            <h2>5. Stockage des données</h2>
+            <p>Toutes les données du jeu (progression, scores, paramètres) sont stockées localement sur votre appareil. Nous n'avons accès à aucune de ces informations.</p>
 
-        <h2>8. Vos droits</h2>
-        <p>Comme nous ne collectons aucune donnée personnelle :</p>
-        <ul>
-            <li>Il n'y a aucune donnée personnelle à consulter</li>
-            <li>Il n'y a aucune donnée personnelle à supprimer</li>
-            <li>Il n'y a aucune donnée personnelle à modifier</li>
-        </ul>
-        <p>Si vous désinstallez le jeu, toutes les données locales du jeu seront automatiquement supprimées de votre appareil.</p>
+            <h2>6. Sécurité</h2>
+            <p>La sécurité de vos données est garantie par le fait que nous ne collectons aucune information. Toutes les données du jeu restent sur votre appareil.</p>
 
-        <h2>9. Services tiers</h2>
-        <p>Notre jeu est distribué via Google Play Store. Pour comprendre comment Google collecte et utilise les données, veuillez consulter :</p>
-        <ul>
-            <li>Politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-            <li>Conditions d'utilisation de Google Play : <a href="https://play.google.com/intl/fr_fr/about/play-terms/" target="_blank">https://play.google.com/intl/fr_fr/about/play-terms/</a></li>
-        </ul>
+            <h2>7. Enfants</h2>
+            <p>Notre jeu convient à tous les âges car il ne collecte aucune donnée personnelle. Les parents peuvent être rassurés que leurs enfants peuvent jouer en toute sécurité.</p>
 
-        <h2>10. Modifications de cette politique</h2>
-        <p>Nous pouvons occasionnellement mettre à jour cette politique de confidentialité. Toute modification sera publiée sur cette page avec une nouvelle date de mise à jour.</p>
+            <h2>8. Vos droits</h2>
+            <p>Comme nous ne collectons aucune donnée personnelle :</p>
+            <ul>
+                <li>Il n'y a aucune donnée personnelle à consulter</li>
+                <li>Il n'y a aucune donnée personnelle à supprimer</li>
+                <li>Il n'y a aucune donnée personnelle à modifier</li>
+            </ul>
+            <p>Si vous désinstallez le jeu, toutes les données locales du jeu seront automatiquement supprimées de votre appareil.</p>
 
-        <h2>11. Consentement</h2>
-        <p>En téléchargeant et en utilisant notre jeu, vous reconnaissez avoir lu et compris cette politique de confidentialité.</p>
+            <h2>9. Services tiers</h2>
+            <p>Notre jeu est distribué via Google Play Store. Pour comprendre comment Google collecte et utilise les données, veuillez consulter :</p>
+            <ul>
+                <li>Politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                <li>Conditions d'utilisation de Google Play : <a href="https://play.google.com/intl/fr_fr/about/play-terms/" target="_blank">https://play.google.com/intl/fr_fr/about/play-terms/</a></li>
+            </ul>
 
-        <h2>12. Nous contacter</h2>
-        <div class="contact">
-            <p>Si vous avez des questions concernant cette politique de confidentialité ou notre jeu, n'hésitez pas à nous contacter :</p>
-            <p><strong>Email :</strong> dpdn1350@gmail.com<br>
-            <strong>Développeur :</strong> Ollivve</p>
+            <h2>10. Modifications de cette politique</h2>
+            <p>Nous pouvons occasionnellement mettre à jour cette politique de confidentialité. Toute modification sera publiée sur cette page avec une nouvelle date de mise à jour.</p>
+
+            <h2>11. Consentement</h2>
+            <p>En téléchargeant et en utilisant notre jeu, vous reconnaissez avoir lu et compris cette politique de confidentialité.</p>
+
+            <h2>12. Nous contacter</h2>
+            <div class="contact">
+                <p>Si vous avez des questions concernant cette politique de confidentialité ou notre jeu, n'hésitez pas à nous contacter :</p>
+                <p><strong>Email :</strong> dpdn1350@gmail.com<br>
+                <strong>Développeur :</strong> Ollivve</p>
+            </div>
+
+            <div class="highlight" style="margin-top: 40px;">
+                <p><strong>Résumé :</strong> Notre jeu respecte totalement votre vie privée. Nous ne collectons, ne stockons et ne partageons AUCUNE de vos données personnelles. Vous pouvez jouer en toute tranquillité !</p>
+            </div>
         </div>
 
-        <div class="highlight" style="margin-top: 40px;">
-            <p><strong>Résumé :</strong> Notre jeu respecte totalement votre vie privée. Nous ne collectons, ne stockons et ne partageons AUCUNE de vos données personnelles. Vous pouvez jouer en toute tranquillité !</p>
+        <!-- ENGLISH SECTION -->
+        <div id="en-content" class="language-section">
+            <h1>Privacy Policy</h1>
+            <p class="update-date"><strong>Last updated:</strong> 15/06/2025</p>
+
+            <h2>1. Introduction</h2>
+            <p>This privacy policy applies to the <strong>DesPharesDansLesNuages</strong> mobile application, developed by <strong>Ollivve</strong> .</p>
+            
+            <div class="highlight">
+                <p><strong>Important:</strong> Our game does NOT collect ANY personal data. We do not collect and do not have access to your personal information such as GPS location, address book, passwords, photos, or any other sensitive data.</p>
+            </div>
+
+            <h2>2. Data Collection</h2>
+            
+            <h3>2.1 Our game does NOT collect ANY data</h3>
+            <p>We designed our game to work without collecting any personal information. The game:</p>
+            <ul>
+                <li>Does NOT collect your GPS location</li>
+                <li>Does NOT access your address book</li>
+                <li>Does NOT ask for passwords</li>
+                <li>Does NOT access your photos or files</li>
+                <li>Does NOT collect personally identifiable information</li>
+                <li>Does NOT require account creation</li>
+            </ul>
+
+            <h3>2.2 Data automatically collected by Google Play</h3>
+            <p>When you download and install our game via Google Play Store, Google may automatically collect certain technical data for the proper functioning of the Play Store, such as:</p>
+            <ul>
+                <li>Device information (device type, Android version)</li>
+                <li>Installation and uninstallation statistics</li>
+                <li>Crash reports and performance diagnostics (if enabled in your Google Play settings)</li>
+            </ul>
+            <p><strong>Important note:</strong> This data is collected directly by Google, not by our application. We do not have access to your personal information through these collections.</p>
+
+            <h2>3. How We Use Data</h2>
+            <p>Since our game does not collect any data, we do not use any personal information about you. The game works entirely offline on your device.</p>
+
+            <h2>4. Information Sharing</h2>
+            <p>We do not share any personal data because we do not collect any.</p>
+
+            <h2>5. Data Storage</h2>
+            <p>All game data (progress, scores, settings) is stored locally on your device. We do not have access to any of this information.</p>
+
+            <h2>6. Security</h2>
+            <p>The security of your data is guaranteed by the fact that we do not collect any information. All game data remains on your device.</p>
+
+            <h2>7. Children</h2>
+            <p>Our game is suitable for all ages as it does not collect any personal data. Parents can be assured that their children can play safely.</p>
+
+            <h2>8. Your Rights</h2>
+            <p>Since we do not collect any personal data:</p>
+            <ul>
+                <li>There is no personal data to access</li>
+                <li>There is no personal data to delete</li>
+                <li>There is no personal data to modify</li>
+            </ul>
+            <p>If you uninstall the game, all local game data will be automatically deleted from your device.</p>
+
+            <h2>9. Third-Party Services</h2>
+            <p>Our game is distributed via Google Play Store. To understand how Google collects and uses data, please consult:</p>
+            <ul>
+                <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                <li>Google Play Terms of Service: <a href="https://play.google.com/about/play-terms/" target="_blank">https://play.google.com/about/play-terms/</a></li>
+            </ul>
+
+            <h2>10. Changes to This Policy</h2>
+            <p>We may occasionally update this privacy policy. Any changes will be posted on this page with a new update date.</p>
+
+            <h2>11. Consent</h2>
+            <p>By downloading and using our game, you acknowledge that you have read and understood this privacy policy.</p>
+
+            <h2>12. Contact Us</h2>
+            <div class="contact">
+                <p>If you have any questions about this privacy policy or our game, please feel free to contact us:</p>
+                <p><strong>Email:</strong>dpdn1350@gmail.com<br>
+                <strong>Developer:</strong> Ollivve</p>
+            </div>
+
+            <div class="highlight" style="margin-top: 40px;">
+                <p><strong>Summary:</strong> Our game fully respects your privacy. We do NOT collect, store, or share ANY of your personal data. You can play with complete peace of mind!</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        function showLanguage(lang) {
+            // Hide all language sections
+            document.getElementById('fr-content').classList.remove('active');
+            document.getElementById('en-content').classList.remove('active');
+            
+            // Remove active class from all buttons
+            document.getElementById('fr-btn').classList.remove('active');
+            document.getElementById('en-btn').classList.remove('active');
+            
+            // Show selected language and activate button
+            if (lang === 'fr') {
+                document.getElementById('fr-content').classList.add('active');
+                document.getElementById('fr-btn').classList.add('active');
+            } else {
+                document.getElementById('en-content').classList.add('active');
+                document.getElementById('en-btn').classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
